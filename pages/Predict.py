@@ -4,7 +4,7 @@ import numpy as np
 import time
 
 # Set the page configuration for a wide layout
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide", page_title="Dashboard|Churn prediction MLWA", page_icon="🎰")
 
 # Correct the file paths to be relative to the project root
 # This is crucial for a multipage app structure
