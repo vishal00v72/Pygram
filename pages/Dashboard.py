@@ -2,7 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 import os
 
-st.set_page_config(layout="wide") 
+st.set_page_config(layout="wide", page_title="Dashboard|Churn prediction MLWA", page_icon="🎰") 
 
 st.title("📊 Data Profile Report")
 st.write("Explore the dataset used for model training.")
