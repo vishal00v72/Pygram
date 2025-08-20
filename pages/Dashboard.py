@@ -7,7 +7,7 @@ import seaborn as sns
 
 # Set the page configuration for a wide layout and a professional look
 st.set_page_config(
-    page_title="Dashboard",
+    page_title="Dashboard|Churn prediction MLWA",
     page_icon="🎰",
     layout="wide"
 )
@@ -80,4 +80,5 @@ if df is not None:
             internet_churn = df.groupby('InternetService')['Churn'].value_counts(normalize=True).unstack().fillna(0)
             st.bar_chart(internet_churn)
 else:
+
     st.info("Please ensure 'pages/customer_churn_data.csv' is in the correct directory for visualizations.")
